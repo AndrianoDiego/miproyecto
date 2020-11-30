@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+    text-decoration: none;
+}
+
+
+/*para crear el boton*/
+.contenedortodo{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 600ms;
+    padding: 40px;
+}
+
+.contenedortodo:target{
+    background: rgba(0,0,0,0.6);
+    visibility: visible;
+    opacity: 1;
+}
+.contenedortodo:target .popup{
+    top: 50%;
+    left: 50%;
+    transform: rotate(0deg) translate(-50%, -50%); /*para que se posisione en el centro*/
+    visibility: visible;
+}
+
+.popup{
+    width: 100%;
+    max-width: 800px;
+    height: 500px;
+    position: relative;
+    top: -100%;   /*para que no se vea al recargar*/
+    left: -100%;
+    visibility: hidden;
+    transform: rotate(90deg) translate(150%,230%);
+    transition: all 600ms;
+    display: flex;
+    background: ivory;
+}
+
+.img{
+    width: 45%;
+    background-image: url(../imagenes/lado.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.formulario{
+    width: 60%;
+    padding: 50px;
+    overflow-y: auto; /*para que se adapte el texto*/
+}
+.formulario > h1{
+    font-size: 30px;
+}
+.formulario p{
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.boton{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: -20px;
+    padding: 20px;
+    top: -20px;
+    background: black;
+    color: cornsilk;
+    border-radius: 50%;
+    line-height: 10px;
+}

@@ -1,0 +1,36 @@
+:root{
+    --dark: #b7b7b7;
+    --dark-x: #B76654;
+    --light: #ffffff;
+
+}
+body{
+    font-family: 'Spartan', sans-serif;
+    font-weight: 300;
+    color: var(--light);
+}
+.bg-dark{
+    background-color: var(--dark) !important;}
+.bg-dark-x{ 
+    background-color: var(--dark-x);
+}
+.form-control, .btn{
+    min-height: initial;
+    line-height:initial ;
+}
+
+.log{
+    background-image: url('/images/log.png');
+    background-size: cover;
+    background-position: center;
+}
+.log1{
+    background-image: url('/images/log1.png');
+    background-size: cover;
+    background-position: center;
+}
+.log2{
+    background-image: url('/images/log2.png');
+    background-size: cover;
+    background-position: center;
+}

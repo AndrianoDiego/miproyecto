@@ -1,0 +1,11 @@
+@extends('Layout.home')
+@section('sesiones')
+@section('container')
+@section('contacto')
+@section('portafolio')
+
+@section('sobre')
+@section('estrella')
+@section('estrella1')
+@section('carrito')
+@section('product')
